@@ -1,0 +1,77 @@
+@import url("https://webglfundamentals.org/webgl/resources/webgl-tutorials.css");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(18deg,rgb(218, 124, 179),rgb(103, 141, 207),rgb(154, 42, 124));
+  color: #333;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+  }
+}
+
+.info-panel {
+  margin-top: 20px;
+  max-width: 600px; 
+  padding: 15px;
+  background: #f9f9f9;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  border-radius: 16px;
+  text-align: center;
+  border: 2px solid rgb(194, 65, 149);
+}
+
+.info-panel h1 {
+  font-size: 22px;
+  font-weight: 800;
+  margin: 5px;
+  color:rgb(194, 65, 149);
+}
+
+.info-panel h2 {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 5px;
+  color: #444;
+}
+
+.canvas-panel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+canvas {
+  display: block;
+  width: 700px; /* Pastikan lebar default */
+  height: 500px; /* Pastikan tinggi default */
+  background: #ffffff;
+  border: 3px solid rgb(194, 65, 149);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  margin-top: -30px;
+}
+
+@media (max-width: 768px) {
+  canvas {
+    width: 100%; /* Responsif untuk layar kecil */
+    height: auto;
+  }
+}
